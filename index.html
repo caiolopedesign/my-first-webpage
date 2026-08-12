@@ -1,89 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Caio Lopes Design</title>
+
+    <style>
+
+        /* ---------- GENERAL ---------- */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background-color: #f7f7f7;
+        }
+
+        header,
+        main,
+        footer {
+            max-width: 1100px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+
+        /* ---------- HEADER ---------- */
+
+        header {
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        header img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: #666;
+            max-width: 700px;
+            margin: auto;
+        }
+
+
+        /* ---------- INTRODUCTION ---------- */
+
+        main > p {
+            max-width: 800px;
+            margin: 0 auto 60px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+
+        /* ---------- HEADINGS ---------- */
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            margin-bottom: 15px;
+        }
+
+
+        /* ---------- PROJECTS ---------- */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 70px;
+        }
+
+        .project {
+            display: block;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            text-decoration: none;
+            color: #222;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .project img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .project p {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+
+
+        /* ---------- SKILLS ---------- */
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .skill-category {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+
+            box-shadow:
+                0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        .skill-category ol {
+            padding-left: 25px;
+        }
+
+        .skill-category li {
+            margin-bottom: 6px;
+        }
+
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            text-align: center;
+
+            border-top: 1px solid #ddd;
+
+            color: #777;
+
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            margin-top: 40px;
+        }
+
+
+        /* ---------- MOBILE ---------- */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
+            header img {
+                width: 150px;
+                height: 150px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header h2 {
+                font-size: 1rem;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .project img {
+                height: auto;
+            }
+
+            header,
+            main,
+            footer {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+    </style>
+
 </head>
+
+
 <body>
-    <header> 
-        <img src="images/profile.png" alt="Caio Lopes, web designer, posing professionally. Portrait demonstrates a confident and approachable demeanor, conveying expertise and creativity in digital design and development work.">
-        <h1>Caio Lopes Web Design </h1> 
-        <h2>Designing thoughtful digital experiences through research, creativity, and clean code.</h2>
-    </header>   
-    <main> 
-        <p> Every project I create is built with purpose—combining thoughtful design, user-focused strategy, and clean development to solve real problems. From research and wireframing to responsive websites and polished user interfaces, I enjoy transforming ideas into digital experiences that are both visually engaging and easy to use. My goal is to create websites that not only look great but also help businesses connect with their audience and achieve meaningful results.</p>
-        <h2>Projects</h2>
 
-<h3>Hartwell & Pierce</h3>
-<img src="images/HartwellandPierce.jpg" alt="Hartwell & Pierce project image.">
-<h3>Kurohana</h3>
-<img src="images/Kurohana.jpg" alt="Kurohana project image.">
-<h3>Willow Creek Goat Farm</h3>
-<img src="images/WillowCreek.png" alt="Willow Creek Goat Farm project image.">
-<h3>Sereno</h3>
-<img src="images/Sereno..png" alt="Sereno project image.">
-<h3>Harbor Tail</h3>
-<img src="images/HarborTail.png" alt="Harbor Tail project image.">
-<h3>Jade Lantern</h3>
-<img src="images/JadeLantern.jpg" alt="Jade Lantern project image.">
 
-        
-        <h2>Skills</h2>
-        <h3>Design</h3>
-    <ol>
-        <li>UI Design </li>
-        <li>UX Design</li>
-        <li>Wireframing</li>
-        <li>Prototyping</li>
-        <li>User Research</li>
-        <li>Information Architecture</li>
-        <li>Visual Design</li>
-        <li>Responsive Design</li>
-        <li>Accessibility (WCAG)</li>
-    </ol>
+    <!-- HEADER -->
 
-    <h3>Development</h3>
-     <ol>
-        <li>HTML5 </li>
-        <li>CSS3</li>
-        <li>JavaScript (ES6+)</li>
-        <li>Responsive Layouts</li>
-        <li>CSS Grid</li>
-        <li>Flexbox</li>
-        <li>Git & GitHub</li>
-        <li>Performance Optimization</li>
-        <li>SEO Best Practices</li>
-     </ol>
+    <header>
 
-        <h3>Tools</h3>
-    <ol>
-        <li>Figma</li>
-        <li>Wix Studio</li>
-        <li>Adobe Photoshop</li>
-        <li>Adobe Illustrator</li>
-        <li>Canva</li>
-        <li>Visual Studio Code</li>
-        <li>Notion</li>
-        <li>Trello</li>
-    </ol>
+        <img
+            src="images/profile.png"
+            alt="Caio Lopes, web designer, posing professionally."
+        >
 
-        <h3>Soft Skills</h3>
-    <ol>
-        <li>Communication</li>
-        <li>Problem-Solving</li>      
-        <li>Attention to Detail</li>            
-        <li>Time Management</li>
-        <li>Collaboration</li>
-        <li>Adaptability</li>
-        <li>Creative Thinking</li>
-        <li>Continuous Learning</li>     
-         </ol>
+        <h1>
+            Caio Lopes Design
+        </h1>
 
-        
+        <h2>
+            Designing thoughtful digital experiences through research,
+            creativity, and clean code.
+        </h2>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+
+        <!-- INTRODUCTION -->
+
+        <p>
+            Every project I create is built with purpose—combining thoughtful
+            design, user-focused strategy, and clean development to solve real
+            problems. From research and wireframing to responsive websites and
+            polished user interfaces, I enjoy transforming ideas into digital
+            experiences that are both visually engaging and easy to use. My goal
+            is to create websites that not only look great but also help
+            businesses connect with their audience and achieve meaningful results.
+        </p>
+
+
+        <!-- PROJECTS -->
+
+        <h2>
+            Projects
+        </h2>
+
+
+        <section class="projects">
+
+
+            <!-- HARTWELL & PIERCE -->
+
+            <a
+                href="https://caiolopeswebdev.wixsite.com/hartwellandpierce"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project"
+            >
+
+                <h3>
+                    Hartwell & Pierce
+                </h3>
+
+                <img
+                    src="images/HartwellandPierce.jpg"
+                    alt="Hartwell & Pierce web design project"
+                >
+
+                <p>
+                    View Project →
+                </p>
+
+            </a>
+
+
+            <!-- KUROHANA -->
+
+            <a
+                href="https://caiolopes123.wixsite.com/kurohana"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project"
+            >
+
+                <h3>
+                    Kurohana
+                </h3>
+
+                <img
+                    src="images/Kurohana.jpg"
+                    alt="Kurohana Japanese Kitchen web design project"
+                >
+
+                <p>
+                    View Project →
+                </p>
+
+            </a>
+
+
+            <!-- WILLOW CREEK GOAT FARM -->
+
+            <a
+                href="https://caiolopes123.wixsite.com/willow-creek-goat-fa"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project"
+            >
+
+                <h3>
+                    Willow Creek Goat Farm
+                </h3>
+
+                <img
+                    src="images/WillowCreek.png"
+                    alt="Willow Creek Goat Farm web design project"
+                >
+
+                <p>
+                    View Project →
+                </p>
+
+            </a>
+
+
+            <!-- SERENO -->
+
+            <a
+                href="https://caiolopeswebdev.wixsite.com/sereno"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project"
+            >
+
+                <h3>
+                    Sereno.
+                </h3>
+
+                <img
+                    src="images/Sereno..png"
+                    alt="Sereno candle brand web design project"
+                >
+
+                <p>
+                    View Project →
+                </p>
+
+            </a>
+
+
+            <!-- HARBOR TAIL -->
+
+            <a
+                href="https://caiolopes123.wixsite.com/harbortailrescue"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project"
+            >
+
+                <h3>
+                    Harbor Tail Rescue
+                </h3>
+
+                <img
+                    src="images/HarborTail.png"
+                    alt="Harbor Tail Rescue web design project"
+                >
+
+                <p>
+                    View Project →
+                </p>
+
+            </a>
+
+
+            <!-- JADE LANTERN -->
+
+            <a
+                href="https://caiolopes123.wixsite.com/jade-lantern-kitchen"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project"
+            >
+
+                <h3>
+                    Jade Lantern Kitchen
+                </h3>
+
+                <img
+                    src="images/JadeLantern.jpg"
+                    alt="Jade Lantern Kitchen web design project"
+                >
+
+                <p>
+                    View Project →
+                </p>
+
+            </a>
+
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <h2>
+            Skills
+        </h2>
+
+
+        <section class="skills">
+
+
+            <!-- DESIGN -->
+
+            <article class="skill-category">
+
+                <h3>
+                    Design
+                </h3>
+
+                <ol>
+
+                    <li>UI Design</li>
+
+                    <li>UX Design</li>
+
+                    <li>Wireframing</li>
+
+                    <li>Prototyping</li>
+
+                    <li>User Research</li>
+
+                    <li>Information Architecture</li>
+
+                    <li>Visual Design</li>
+
+                    <li>Responsive Design</li>
+
+                    <li>Accessibility (WCAG)</li>
+
+                </ol>
+
+            </article>
+
+
+            <!-- DEVELOPMENT -->
+
+            <article class="skill-category">
+
+                <h3>
+                    Development
+                </h3>
+
+                <ol>
+
+                    <li>HTML5</li>
+
+                    <li>CSS3</li>
+
+                    <li>JavaScript (ES6+)</li>
+
+                    <li>Responsive Layouts</li>
+
+                    <li>CSS Grid</li>
+
+                    <li>Flexbox</li>
+
+                    <li>Git & GitHub</li>
+
+                    <li>Performance Optimization</li>
+
+                    <li>SEO Best Practices</li>
+
+                </ol>
+
+            </article>
+
+
+            <!-- TOOLS -->
+
+            <article class="skill-category">
+
+                <h3>
+                    Tools
+                </h3>
+
+                <ol>
+
+                    <li>Figma</li>
+
+                    <li>Wix Studio</li>
+
+                    <li>Adobe Photoshop</li>
+
+                    <li>Adobe Illustrator</li>
+
+                    <li>Canva</li>
+
+                    <li>Visual Studio Code</li>
+
+                    <li>Notion</li>
+
+                    <li>Trello</li>
+
+                </ol>
+
+            </article>
+
+
+            <!-- SOFT SKILLS -->
+
+            <article class="skill-category">
+
+                <h3>
+                    Soft Skills
+                </h3>
+
+                <ol>
+
+                    <li>Communication</li>
+
+                    <li>Problem-Solving</li>
+
+                    <li>Attention to Detail</li>
+
+                    <li>Time Management</li>
+
+                    <li>Collaboration</li>
+
+                    <li>Adaptability</li>
+
+                    <li>Creative Thinking</li>
+
+                    <li>Continuous Learning</li>
+
+                </ol>
+
+            </article>
+
+
+        </section>
+
+
     </main>
-    
-    <footer>Copyright Caio Lopes Design</footer>
-    
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        Copyright © Caio Lopes Design
+
+    </footer>
+
+
 </body>
+
 </html>
+```
